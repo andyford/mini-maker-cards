@@ -1,0 +1,10 @@
+dist/
+node_modules
+
+# VSCode & Webstorm history directories
+.history
+.idea
+.vscode
+
+# OS crap
+.DS_Store

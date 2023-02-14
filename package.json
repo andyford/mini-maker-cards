@@ -1,0 +1,21 @@
+{
+  "name": "mini-maker-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ELEVENTY_ENV=prod eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
+    "watch:eleventy": "eleventy --serve",
+    "start": "npm-run-all serve --parallel watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "unfurl.js": "^6.1.0"
+  }
+}

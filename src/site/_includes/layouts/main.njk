@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    {# <link rel="shortcut icon" href="/favicon.png"/>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta property="og:title" content="{{ title or metadata.title }}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or metadata.title }}">
+    <meta name="twitter:description" content="{{ description or metadata.description }}">
+    <meta name="twitter:site" content="@andyford">
+    <meta name="twitter:creator" content="@andyford">
+    {%- if og_image %}
+      <meta property="og:image" content="{{ og_image | absoluteUrl }}">
+      <meta name="twitter:image" content="{{ og_image | absoluteUrl}}">
+    {% endif -%}
+
+    <link rel="stylesheet" href="{{ '/main.css' | url }}">
+    {%- if article_stylesheet -%}
+      {%- set css %}
+      {%- include '../../articles/' + article_stylesheet -%}
+      {%- endset %}
+      <style>
+        {{css | cssmin | safe}}
+      </style>
+    {% endif -%}
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}"> #}
+  </head>
+  <body>
+    {# {% include './partials/page-header.njk' %} #}
+
+    <main>
+      {# {%- if layout == 'base' -%}
+        <h1 class="page-title">{{ title }}</h1>
+      {%- endif -%} #}
+
+      <div>
+        {{ content | safe }}
+      </div>
+
+    </main>
+
+  </body>
+</html>
