@@ -17,7 +17,7 @@ title: homepage
         <strong> {{ site.curated.title }}</strong>
 
         {%- if site.favicon -%}
-          <img class="favicon" src="{{ site.favicon | replace('http://', 'https://') }}" alt="" width="16" />
+          <img class="favicon" src="{{ site.favicon | replace('http://', 'https://') }}" alt="" width="16" loading="lazy" />
         {%- endif -%}
       </div>
       
@@ -28,7 +28,7 @@ title: homepage
       {% endif %}
 
       {% if site.computedImage %}
-        <img class="card-thumb" src="{{ site.computedImage | replace('http://', 'https://') }}" alt="" />
+        <img class="card-thumb" src="{{ site.computedImage | replace('http://', 'https://') }}" alt="" loading="lazy" />
       {% else %}
         <div class="card-thumb card-text-thumb">{{ site.curated.title }}</div>
       {% endif %}

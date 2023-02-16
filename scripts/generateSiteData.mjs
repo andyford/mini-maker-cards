@@ -50,6 +50,9 @@ const main = async function() {
       delete el.computedImage;
     }
 
+    // TODO:
+    // potentially save image to disk? https://dev.to/masbagal/saving-image-from-url-using-node-js-5an6
+
     computedSites.push(el);
   });
 
