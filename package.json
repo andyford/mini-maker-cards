@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ELEVENTY_ENV=prod eleventy",
+    "generate": "node scripts/generateSiteData.mjs",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
@@ -16,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "clean-css": "^5.3.2",
     "unfurl.js": "^6.1.0"
   }
 }
