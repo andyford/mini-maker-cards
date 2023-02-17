@@ -104,3 +104,12 @@ li {
   margin: 0;
   display: block;
 }
+
+.app-footer {
+  padding: 2rem 0 0;
+  font-size: 14px;
+}
+
+.app-footer p {
+  margin: 0
+}
