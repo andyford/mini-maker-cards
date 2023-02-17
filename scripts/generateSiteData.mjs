@@ -1,6 +1,9 @@
 import fs from 'fs';
-import sites from '../src/data/sites.json' assert { type: "json" };
+import { getData } from './getGoogleData.mjs';
+// import sites from '../src/data/sites.json' assert { type: "json" };
 import { unfurl } from'unfurl.js';
+
+const sites = await getData();
 
 // TODO: check the base json file against existing computed/generated file, only process new urls
 // ^ might be good to run against all urls from time to time to get updated info
